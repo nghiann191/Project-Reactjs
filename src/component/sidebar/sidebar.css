@@ -1,0 +1,29 @@
+.sidebar {
+    margin: 0px;
+    float: right;
+    background-color: rgb(167, 25, 167);
+    background-repeat: repeat-y;
+    width: 20%;
+    height: 1000px;
+    filter: alpha;
+}
+
+.air {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.fire {
+    margin-top: 1px;
+    margin-left: 5px;
+}
+
+.earth {
+    margin-top: 1px;
+    margin-left: 5px;
+}
+
+.water {
+    margin-top: 1px;
+    margin-left: 5px;
+}
