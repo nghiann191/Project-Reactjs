@@ -1,0 +1,24 @@
+.list {
+    float: right;
+    width: 20%;
+    height: 1000px;
+    background-color: rgb(78, 8, 144);
+}
+
+.items {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+
+.dustbin {
+    height: 1000px;
+    width: 1000px;
+    color: white;
+    padding: 5px;
+    line-height: 5px;
+    float: left;
+    display: flex;
+    background-color: rgb(218, 76, 218);
+}
