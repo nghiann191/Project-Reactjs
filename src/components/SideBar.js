@@ -1,18 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Item from "./Items";
-import './style.css';
+import "./style.css";
 
-function SideBar({ list }) {
-  
+function SideBar({ listItems }) {
   return (
-    <div className="list">
-      {
-        list.map(
-          (item, index) => (
-            <Item item={item} key={index} source="list" id="drag"/>
-          )
-        )
-      }
+    <div className="listcss">
+      {listItems.map(
+        (item, index) =>
+          item.show && <Item item={item} key={index} source="list" />
+      )}
     </div>
   );
 }
