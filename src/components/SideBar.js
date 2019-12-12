@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Item from "./Items";
 import "./style.css";
+import { data } from "./data";
+import _ from 'lodash';
 
 function SideBar({ listItems }) {
   return (

@@ -58,7 +58,7 @@ function App() {
     let indexList = _.indexOf(list, o=>o.name === item.name);
     setList([
       ..._.slice(list, 0, indexList),
-      {...item, show: true },
+      {...item, show: true, },
       ..._.slice(list, indexList + 1)
     ]);
   };
