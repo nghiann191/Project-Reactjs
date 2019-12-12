@@ -1,24 +1,31 @@
 .listcss {
-    float: right;
     width: 20%;
-    height: 1000px;
+    height: 918px;
     background-color: rgb(78, 8, 144);
+    position: absolute;
 }
 
 .items {
     cursor: pointer;
     width: 80px;
     height: 80px;
-    margin: 5px;
+    margin: 2px 0 0 80px;
+    position: relative;
 }
 
 .dustbin {
-    height: 1000px;
-    width: 1000px;
+    width: 80%;
+    height: 908px;
+    float: right;
     color: white;
     padding: 5px;
     line-height: 5px;
-    float: left;
     display: inline-flex;
     background-color: rgb(218, 76, 218);
+    position: relative;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    align-content: center;
 }
