@@ -42,19 +42,51 @@ export const data = [{
         show: false
     },
     {
-        left: null,
-        top: null,
         condition: "EARTH SEA",
         name: "PLANET",
         img: "planet.png",
         show: false
     },
     {
-        left: null,
-        top: null,
         condition: "FIRE WATER",
         name: "STEAM",
         img: "steam.png",
         show: false
+    },
+    {
+        condition: "EARTH ENERGY",
+        name: "IRON",
+        img: "iron.png",
+        show: false
+    },
+    {
+        condition: "EARTH AIR",
+        name: "BONE",
+        img: "bone.png",
+        show: false
+    },
+    {
+        condition: "BONE WATER",
+        name: "HUMAN",
+        img: "human.png",
+        show: false
+    },
+    {
+        condition: "HUMAN IRON",
+        name: "IRONMAN",
+        img: "iron-man.png",
+        show: false
+    },
+    {
+        condition: "HUMAN WATER",
+        name: "ICEMAN",
+        img: "ice-man.png",
+        show: false
+    },
+    {
+        condition: "FIRE HUMAN",
+        name: "FIREMAN",
+        img: "fire-man.png",
+        show: false
     }
-]
+];

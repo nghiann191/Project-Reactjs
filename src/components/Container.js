@@ -46,13 +46,11 @@ const Container = ({ listItem, show, hideSourceOnDrag }) => {
   };
   const moveItem = (item, left, top) => {
     let index = _.findIndex(list, { name: item.name });
-    setList(
-      [
-        ..._.slice(list, 0, index),
-        { ...item, source: "dustbin", left, top },
-        ..._.slice(list, index + 1)
-      ]
-    );
+    setList([
+      ..._.slice(list, 0, index),
+      { ...item, source: "dustbin", left, top },
+      ..._.slice(list, index + 1)
+    ]);
   };
   // const [boxes,setBoxes] = useState(list);
   // const moveItem = (item,left,top) => {
@@ -65,8 +63,18 @@ const Container = ({ listItem, show, hideSourceOnDrag }) => {
   //   );
   // };
   const CombinDrop = (item_first, item_second) => {
-    let a = item_first.name + " " + item_second.name;
-    let b = _.find(data, item => a === item.condition);
+    let b = _.find(data, item => {
+      let a1 = item_first.name + " " + item_second.name;
+      let a2 = item_second.name + " " +item_first.name;
+      let list1 = _.words(a1);
+      let list2 = _.words(a2);
+      let list3 = _.words(item.condition);
+      if(_.isEqual(list1, list3) || _.isEqual(list2,list3)){
+        return true;
+      } ;
+    });
+    console.log("test" ,item_first.name + " " + item_second.name,item_second.name + " " +item_first.name)
+
     // console.log("asdas",item_first.left);
     return b;
   };
@@ -96,7 +104,6 @@ const Container = ({ listItem, show, hideSourceOnDrag }) => {
 
   return (
     <div ref={drop} className="dustbin">
-     
       {listItem.length !== 0 &&
         list.map((item, index) => {
           const { left, top } = item;
