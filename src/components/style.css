@@ -1,8 +1,8 @@
 .listcss {
     width: 20%;
-    height: 1118px;
+    height: 918px;
     background-color: rgb(78, 8, 144);
-    display: block;
+    position: absolute;
 }
 
 .items {
@@ -10,22 +10,17 @@
     width: 80px;
     height: 80px;
     margin: 2px 0 0 80px;
-}
-
-.dustbin .items {
-    position: absolute;
-    z-index: 100;
-    opacity: 1;
+    position: relative;
 }
 
 .dustbin {
     width: 80%;
-    height: 1108px;
+    height: 908px;
     float: right;
     color: white;
     padding: 5px;
     line-height: 5px;
-    display: flex;
+    display: inline-flex;
     background-color: rgb(218, 76, 218);
     position: relative;
 }
@@ -33,5 +28,4 @@
 .text {
     font-family: 'Times New Roman', Times, serif;
     align-content: center;
-    font-size: 14px;
 }
